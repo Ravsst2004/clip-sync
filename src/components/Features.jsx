@@ -25,7 +25,7 @@ const Features = () => {
         <div className="relative flex flex-col md:flex-row md:space-x-32">
           <div className="md:w-1/2">
             <img
-              src="/public/images/image-computer.png"
+              src="/images/image-computer.png"
               alt="Computer"
               className="md:absolute top-0 right-[50%]"
             />

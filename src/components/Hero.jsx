@@ -11,7 +11,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          src="/public/images/logo.png"
+          src="/images/logo.png"
           width={250}
           height={250}
           alt="Logo"
