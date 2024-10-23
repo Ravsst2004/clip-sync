@@ -13,7 +13,7 @@ const Supercharge = () => {
       title: "Plain Text Snippets",
       description:
         "Remove unwanted formatting from copied text for a consistent look.",
-      img: "images/icon-blacklist.svg",
+      img: "images/icon-text.svg",
     },
     {
       title: "Sneak Preview",
