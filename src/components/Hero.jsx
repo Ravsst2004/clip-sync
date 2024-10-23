@@ -26,8 +26,8 @@ const Hero = () => {
         </p>
 
         <ButtonContainer>
-          <Button className="bg-strongCyan">Download for iOS</Button>
-          <Button className="bg-lightBlue">Download for iOS</Button>
+          <Button className="bg-strongCyan">Download for IOS</Button>
+          <Button className="bg-lightBlue">Download for MAC</Button>
         </ButtonContainer>
       </div>
     </section>
