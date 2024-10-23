@@ -13,3 +13,7 @@ body {
     background-image: url("/public/images/bg-header-mobile.png");
   }
 }
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
