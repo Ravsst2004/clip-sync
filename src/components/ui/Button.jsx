@@ -1,11 +1,15 @@
+import { motion } from "framer-motion";
+
 const Button = ({ children, className, ...props }) => {
   return (
-    <button
+    <motion.button
+      whileTap={{ scale: 0.7 }}
+      whileHover={{ scale: 1.1, opacity: 0.8 }}
       {...props}
-      className={`p-4 px-8 rounded-full shadow-lg  duration-200 hover:opacity-80 ${className}`}
+      className={`p-4 px-8 rounded-full shadow-lg duration-200 ${className}`}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
 
