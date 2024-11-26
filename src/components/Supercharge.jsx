@@ -1,3 +1,4 @@
+import ScaleOnReveal from "./motion/ScaleOnReveal";
 import MainTitle from "./ui/MainTitle";
 import SuperchargeList from "./ui/SuperchargeList";
 
@@ -26,7 +27,10 @@ const Supercharge = () => {
   return (
     <section>
       <div className="section-container my-20">
-        <MainTitle>Supercharge your workflow</MainTitle>
+        <ScaleOnReveal>
+          <MainTitle>Supercharge your workflow</MainTitle>
+        </ScaleOnReveal>
+
         <p className="section-content mb-16 text-xl">
           We&apos;ve got the tools to boost your productivity.
         </p>

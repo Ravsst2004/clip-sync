@@ -1,5 +1,6 @@
+import { useRef } from "react";
 import FeaturesList from "./ui/FeaturesList";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Features = () => {
   const featuresList = [
@@ -20,12 +21,21 @@ const Features = () => {
     },
   ];
 
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const imageFadeIn = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
+
   return (
-    <section>
+    <section ref={ref}>
       <div className="section-container my-20">
         <div className="relative flex flex-col md:flex-row md:space-x-32">
           <div className="md:w-1/2">
             <motion.img
+              style={{ opacity: imageFadeIn }}
               src="/images/image-computer.png"
               alt="Computer"
               className="md:absolute top-0 right-[50%]"

@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const FeaturesList = ({ title, description }) => {
   const scope = useRef(null);
-  const isInView = useInView(scope, { once: true });
+  const isInView = useInView(scope, { once: false });
 
   return (
     <motion.div
