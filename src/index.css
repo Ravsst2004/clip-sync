@@ -12,6 +12,11 @@ body {
   @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
 }
 
+::selection {
+  background-color: hsl(171, 66%, 44%);
+  color: #ffffff;
+}
+
 @media (max-width: 576px) {
   body {
     background-image: url("/public/images/bg-header-mobile.png");

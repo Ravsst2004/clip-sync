@@ -1,8 +1,14 @@
 import Button from "./ui/Button";
 import ButtonContainer from "./ui/ButtonContainer";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
+  const { scrollY } = useScroll();
+
+  const mainTextOpacity = useTransform(scrollY, [0, 510], [1, 0]);
+  const mainTextScale = useTransform(scrollY, [0, 550], [1, 1.2]);
+  const paragraphTextOpacity = useTransform(scrollY, [0, 700], [1, 0]);
+
   return (
     <section>
       <div className="section-container mb-40 pt-16">
@@ -19,9 +25,10 @@ const Hero = () => {
         />
 
         <motion.h1
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
+          style={{ opacity: mainTextOpacity, scale: mainTextScale }}
           className="main-title"
         >
           A Timeline of Everything You Copy
@@ -31,6 +38,7 @@ const Hero = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
+          style={{ opacity: paragraphTextOpacity }}
           className="max-w-3xl mx-auto mb-10 text-2xl text-darkGrayishBlue"
         >
           ClipSync helps you monitor and manage every copied item. Access your
