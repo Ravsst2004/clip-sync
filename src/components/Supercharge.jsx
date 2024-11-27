@@ -31,7 +31,7 @@ const Supercharge = () => {
           <MainTitle>Supercharge your workflow</MainTitle>
         </ScaleOnReveal>
 
-        <p className="section-content mb-16 text-xl">
+        <p className="section-content mb-24 text-xl leading-9 text-grayishBlue">
           We&apos;ve got the tools to boost your productivity.
         </p>
 

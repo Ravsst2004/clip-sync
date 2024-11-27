@@ -9,7 +9,7 @@ const ScaleOnReveal = ({ children }) => {
   });
 
   const mainTextOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 0]);
-  const mainTextScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 1.2]);
+  const mainTextScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 1, 1.3]);
 
   return (
     <motion.div

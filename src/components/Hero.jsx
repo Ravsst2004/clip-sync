@@ -7,19 +7,18 @@ const Hero = () => {
   return (
     <section>
       <div className="section-container mb-40 pt-16">
-        <motion.img
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          whileHover={{ scale: 1.3, transition: { duration: 0.5 } }}
-          src="/images/logo.png"
-          width={250}
-          height={250}
-          alt="Logo"
-          className="mx-auto my-16"
-        />
-
         <ScaleOnReveal>
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            whileHover={{ scale: 1.3, transition: { duration: 0.5 } }}
+            src="/images/logo.png"
+            width={250}
+            height={250}
+            alt="Logo"
+            className="mx-auto my-16"
+          />
           <motion.h1
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
