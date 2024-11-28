@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ScaleOnReveal from "./motion/ScaleOnReveal";
 import MainTitle from "./ui/MainTitle";
 import SuperchargeList from "./ui/SuperchargeList";
@@ -24,8 +25,10 @@ const Supercharge = () => {
     },
   ];
 
+  const contraintRef = useRef(null);
+
   return (
-    <section>
+    <section ref={contraintRef}>
       <div className="section-container my-20">
         <ScaleOnReveal>
           <MainTitle>Supercharge your workflow</MainTitle>
@@ -42,6 +45,7 @@ const Supercharge = () => {
               title={item.title}
               description={item.description}
               img={item.img}
+              contraintRef={contraintRef}
             />
           ))}
         </div>

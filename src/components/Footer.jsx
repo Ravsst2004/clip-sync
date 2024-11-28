@@ -23,6 +23,7 @@ const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col items-center justify-between md:flex-row">
           <motion.img
+            drag={true}
             onClick={handleClick}
             src="images/logo.png"
             alt=""

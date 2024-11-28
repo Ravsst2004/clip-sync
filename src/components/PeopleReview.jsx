@@ -26,8 +26,8 @@ const PeopleReview = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-6 max-w-full mx-auto text-center px-10">
-      <h1 className="main-title">What People Are Saying</h1>
+    <section className="bg-gray-100 py-20 max-w-full mx-auto text-center px-10 mt-44">
+      <h1 className="main-title">What People Are Say</h1>
       <p className="max-w-3xl mx-auto mb-14 text-xl leading-9 text-grayishBlue">
         Hear directly from our customers and see how we&apos;ve made a positive
         impact on their lives and businesses.
