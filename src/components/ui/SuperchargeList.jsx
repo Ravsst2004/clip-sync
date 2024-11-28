@@ -9,7 +9,11 @@ const SuperchargeList = ({ title, description, img, contraintRef }) => {
   return (
     <motion.div
       ref={scope}
-      animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 100 }}
+      animate={{
+        opacity: isInView ? 1 : 0,
+        y: isInView ? 0 : 100,
+        x: isInView ? 0 : 100,
+      }}
       transition={{ duration: 2, type: "spring", stiffness: 400 }}
       whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
       className="flex flex-col items-center space-y-5 cursor-grab"
